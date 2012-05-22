@@ -1,0 +1,2 @@
+class MasterPricesController < ApplicationController
+end

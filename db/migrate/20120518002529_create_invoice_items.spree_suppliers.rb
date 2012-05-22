@@ -1,0 +1,14 @@
+# This migration comes from spree_suppliers (originally 20120131161610)
+class CreateInvoiceItems < ActiveRecord::Migration
+  def change
+    create_table :spree_invoice_items do |t|
+      t.integer :product_id
+      t.integer :quantity
+      t.integer :supplier_invoice_id
+      t.integer :line_item_id
+
+      t.timestamps
+    end
+  end
+end
+
